@@ -5,3 +5,12 @@
 //Explain & TIP: This is like having labels you can rewrite anytime, which is great for when
 // you need to adjust your list based on new information.
 
+
+function createObjectWithDynamicKey(key: string, value: string) {
+    let dynamicObject: { [key: string]: string } = {}; // Explicit type definition
+    dynamicObject[key] = value;
+    return dynamicObject;
+}
+
+let userPreference = createObjectWithDynamicKey("theme", "dark");
+console.log(userPreference);
