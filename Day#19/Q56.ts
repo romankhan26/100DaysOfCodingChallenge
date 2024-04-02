@@ -18,13 +18,13 @@ console.log(stringsArray); // Output: ["apple", "banana", "carrot"]
 
 let numbersArray = mixedArray.filter(item => typeof item === "number");
 
-// Shows the list of just words
-console.log(numbersArray); // Output: ["apple", "banana", "carrot"]
-// This line checks each item: if it's a word, it goes into the new list.
+// Shows the list of just numbers
+console.log(numbersArray); // 
+// This line checks each item: if it's a number, it goes into the new list.
 
 
 let booleanArray = mixedArray.filter(item => typeof item === "boolean");
 
-// Shows the list of just words
-console.log(booleanArray); // Output: ["apple", "banana", "carrot"]
-// This line checks each item: if it's a word, it goes into the new list.
+// Shows the list of just boolean
+console.log(booleanArray); // 
+// This line checks each item: if it's a boolean, it goes into the new list.
