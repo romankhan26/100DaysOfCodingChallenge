@@ -1,5 +1,6 @@
+"use strict";
 //Question 79
-var car = {
+let car = {
     make: "Toyota",
     model: "Corolla",
     year: 2020,
@@ -8,7 +9,7 @@ var car = {
 };
 console.log(car.model + " " + car.color);
 //Question 80
-var car2 = {
+let car2 = {
     name: "Mercedes",
     year: 2000,
     mileage: 100000,
@@ -19,9 +20,9 @@ console.log(car2);
 //Question 81
 // This function shows every detail about an object
 function logObjectProperties(obj) {
-    for (var property in obj) {
+    for (let property in obj) {
         // Loops through each property in the object
-        console.log("".concat(property, ": ").concat(obj[property]));
+        console.log(`${property}: ${obj[property]}`);
         // Shows the property name and its value
     }
 }

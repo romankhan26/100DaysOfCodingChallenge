@@ -1,3 +1,4 @@
+"use strict";
 //Question 88
 function nearestInt(x) {
     return Math.round(x);
@@ -13,6 +14,7 @@ function ConvertintoInt(numberW, numberD) {
     console.log(parseInt(numberW) - parseFloat(numberD));
 }
 ConvertintoInt("123", "3.70");
+//Question 90
 function isValueNAN(value) {
     return isNaN(value);
 }

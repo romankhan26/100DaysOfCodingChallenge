@@ -1,5 +1,6 @@
+"use strict";
 //Question 124
-var StudentData = {
+let StudentData = {
     name: "John",
     age: 20,
     course: "Angular",
@@ -19,7 +20,7 @@ console.log(StudentData.rollnumber(125148));
 console.log(" ");
 console.log(StudentData.rollnumber(125118));
 //Question 125
-var rectangle = {
+const rectangle = {
     length: 10,
     height: 15,
     area: function () {
@@ -28,13 +29,12 @@ var rectangle = {
 };
 console.log(rectangle.area());
 //Question 126
-var myObject = {
+let myObject = {
     property: "Value",
     outerMethod: function () {
-        var _this = this;
         console.log(this.property);
-        var innerMethod = function () {
-            console.log(_this.property);
+        const innerMethod = () => {
+            console.log(this.property);
         };
         innerMethod();
     }

@@ -1,3 +1,4 @@
+"use strict";
 //Question 103
 function getRBoolean() {
     return Math.random() > 0.5;
@@ -6,7 +7,7 @@ console.log(getRBoolean());
 //Question 104
 // This function generates a random hexadecimal color code
 function getRandomHexColor() {
-    var color = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16).padStart(6, '0');
+    const color = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16).padStart(6, '0');
     return color; // Returns the random color code
 }
 console.log(getRandomHexColor()); // Outputs a random hex color code like #ff3e12

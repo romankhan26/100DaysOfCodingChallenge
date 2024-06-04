@@ -1,6 +1,6 @@
+"use strict";
 //Question 115
-var day = function (num) {
-    if (num === void 0) { num = 6; }
+let day = function (num = 6) {
     switch (num) {
         case 1:
             console.log("Monday");
@@ -26,6 +26,7 @@ var day = function (num) {
 };
 day(5);
 day(4);
+//Question 116
 function Season(Monthnum) {
     switch (Monthnum) {
         case 12:
@@ -49,4 +50,6 @@ function Season(Monthnum) {
             console.log("Summer");
     }
 }
+Season(8);
+//Question 117
 Season(12);

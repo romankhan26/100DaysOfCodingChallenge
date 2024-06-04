@@ -1,5 +1,6 @@
+"use strict";
 //Question 121
-for (var i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
     if (i === 5) {
         continue;
     }
@@ -7,7 +8,7 @@ for (var i = 0; i < 10; i++) {
 }
 console.log("");
 //Question 122
-var number = 10;
+let number = 10;
 while (number > 0) {
     if (number === 5) {
         break;
@@ -18,11 +19,10 @@ while (number > 0) {
 //Question 123
 // This function iterates through a string and logs each character until it finds a vowel
 function logUntilVowel(str) {
-    var vowels = "aeiouAEIOU";
-    for (var _i = 0, str_1 = str; _i < str_1.length; _i++) {
-        var char = str_1[_i];
+    const vowels = "aeiouAEIOU";
+    for (const char of str) {
         if (vowels.includes(char)) {
-            console.log("First vowel found: ".concat(char));
+            console.log(`First vowel found: ${char}`);
             break; // Stops the loop at the first vowel found
         }
         console.log(char); // Logs each character until a vowel is encountered

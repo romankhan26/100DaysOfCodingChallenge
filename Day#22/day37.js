@@ -1,6 +1,7 @@
+"use strict";
 //Question 109
-var time = new Date;
-var CrntHour = time.getHours();
+let time = new Date;
+let CrntHour = time.getHours();
 if (CrntHour < 12 && CrntHour > 6) {
     console.log(time.getHours() + ":" + time.getMinutes());
     console.log("Good Morning");
@@ -31,7 +32,7 @@ console.log(assignGrade(90.5));
 //Question 111
 // Age groups can typically be categorized by specific ranges. For instance, you might 
 //consider anyone under 13 a child, between 13 and 19 a teenager, and 20 or older an adult.
-var age1 = 45;
+const age1 = 45;
 if (age1 < 13) {
     console.log("Child");
 }

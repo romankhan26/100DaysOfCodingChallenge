@@ -1,3 +1,4 @@
+"use strict";
 //Question 82
 function stringLength(string) {
     return string.length;

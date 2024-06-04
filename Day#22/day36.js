@@ -1,3 +1,4 @@
+"use strict";
 //Question 106
 // This function checks if a year is a leap year
 function isLeapYear(year) {
@@ -15,7 +16,7 @@ function isDivisibleBy2n3(number1) {
 console.log(isDivisibleBy2n3(36));
 //Question 108
 function StringComparison(str1, str2) {
-    console.log('Are "HElLo WorlD" & "Hello world" identical regardless of their cases');
+    console.log('Are "HElLo WorlD" & "Hello world" identical regardless of their cases?');
     return str1.toLowerCase() === str2.toLowerCase();
 }
 console.log(StringComparison("HElLo WorlD", "Hello world"));
